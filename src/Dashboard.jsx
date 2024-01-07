@@ -73,7 +73,7 @@ function Dashboard() {
           <th>Price Range (Low)</th>
           <th>Price Range (High)</th>
           <th>Shares</th>
-          <th>Managers</th>
+          
           <th>Volume</th>
         </tr>
       </thead>
@@ -87,7 +87,7 @@ function Dashboard() {
             <td>{ipo.priceRangeLow}</td>
             <td>{ipo.priceRangeHigh}</td>
             <td>{ipo.shares}</td>
-            <td>{ipo.managers}</td>
+            
             <td>{ipo.volume}</td>
           </tr>
         ))}

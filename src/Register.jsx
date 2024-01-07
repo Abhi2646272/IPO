@@ -1,7 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link ,useNavigate} from 'react-router-dom'
 
 function Register() {
+  const nav = useNavigate();
+
+
+  const handleRegister = ()=>{
+    nav('/login')
+  }
   return (
     <div id='register'> 
      
@@ -58,7 +64,7 @@ function Register() {
     </div>
   </div>
   <div className="col-12">
-    <button className="btn btn-primary" type="submit">Register</button>Already Registered?
+    <button className="btn btn-primary" type="submit" onClick={handleRegister}>Register</button>Already Registered?
     <Link className=" " type="submit" to='/login'>Login</Link>
   </div>
 </form>
